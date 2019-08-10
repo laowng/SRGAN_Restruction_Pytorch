@@ -1,4 +1,6 @@
-本项目为基于Pytorch的VDSR的重建
+本项目为基于Pytorch的SRGAN的重建
+
+现在可以正常实验，效果见ouput文件夹，有待继续调试
 
 
 训练集为H5文件，根据原论文，应制作大约9000*64张尺寸41的单通道数据，，本网络使用的是3通道，故数量上再除以3，数据集大小为7GB
@@ -18,7 +20,6 @@ jilu.txt    训练过程是先用100张图片将模型预训练一遍，再用�
 
 main_train.py  训练可使用    python main_train.py --cuda
 
-vdsr的代码参考了 @https://github.com/twtygqyy/pytorch-vdsr的代码， 将其单通道改为了3通道
 
 PSNR_evalu.py  评估训测试的PSNR 测试集需要自己制作成H5文件   （刚开始用单文件直接输入，但后来发现，改文件名好麻烦）
 
